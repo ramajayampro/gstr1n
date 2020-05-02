@@ -1,0 +1,20 @@
+
+
+ws_CDNRA = workbook.create_sheet("CDNRA")
+ws_CDNRA.cell(row = 1, column = 1).value  = "Customer GSTIN"
+ws_CDNRA.cell(row = 1, column = 2).value  = "Note Value"
+ws_CDNRA.cell(row = 1, column = 3).value  = "Note Type"
+ws_CDNRA.cell(row = 1, column = 4).value  = "Note Number"
+ws_CDNRA.cell(row = 1, column = 5).value  = "Invoice Number"
+ws_CDNRA.cell(row = 1, column = 6).value  = "Invoice Date"
+ws_CDNRA.cell(row = 1, column = 7).value  = "Note Date"
+ws_CDNRA.cell(row = 1, column = 8).value  = "Is Pre GST ?"
+ws_CDNRA.cell(row = 1, column = 9).value  = "Taxable Value"
+ws_CDNRA.cell(row = 1, column = 10).value  = "Rate"
+ws_CDNRA.cell(row = 1, column = 11).value  = "IGST"
+ws_CDNRA.cell(row = 1, column = 12).value  = "CGST"
+ws_CDNRA.cell(row = 1, column = 13).value  = "SGST"
+ws_CDNRA.cell(row = 1, column = 14).value  = "CESS"
+ws_CDNRA.cell(row = 1, column = 15).value  = "Dealer GSTIN"
+ws_CDNRA.cell(row = 1, column = 16).value  = "Filing Period"
+          

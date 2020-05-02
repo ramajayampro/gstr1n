@@ -1,0 +1,440 @@
+
+
+
+ya = 0
+try:
+     while ya < (len(a['expa'])):
+          yb = 0
+          while yb < (len(a['expa'][ya]['inv'])):
+               yc = 0
+               while yc < (len(a['expa'][ya]['inv'][yb]['itms'])):
+                    try:
+                         ws_EXPA.cell(row = rowexpa, column = 1).value  = (a['expa'][ya]['exp_typ'])
+                    except:
+                         pass
+                    try:
+                         ws_EXPA.cell(row = rowexpa, column = 2).value  = (a['expa'][ya]['inv'][yb]['inum'])
+                    except:
+                         pass
+                    try:
+                         ws_EXPA.cell(row = rowexpa, column = 3).value  = (a['expa'][ya]['inv'][yb]['idt'])
+                    except:
+                         pass
+                    try:
+                         ws_EXPA.cell(row = rowexpa, column = 4).value  = (a['expa'][ya]['inv'][yb]['val'])
+                    except:
+                         pass
+                    try:
+                         ws_EXPA.cell(row = rowexpa, column = 5).value  = (a['expa'][ya]['inv'][yb]['sbpcode'])
+                    except:
+                         pass
+                    try:
+                         ws_EXPA.cell(row = rowexpa, column = 6).value  = (a['expa'][ya]['inv'][yb]['sbnum'])
+                    except:
+                         pass
+                    try:
+                         ws_EXPA.cell(row = rowexpa, column = 7).value  = (a['expa'][ya]['inv'][yb]['sbdt'])
+                    except:
+                         pass
+                    try:
+                         ws_EXPA.cell(row = rowexpa, column = 8).value  = (a['expa'][ya]['inv'][yb]['itms'][yc]['txval'])
+                    except:
+                         pass
+                    try:
+                         ws_EXPA.cell(row = rowexpa, column = 9).value  = (a['expa'][ya]['inv'][yb]['itms'][yc]['rt'])
+                    except:
+                         pass
+                    try:
+                         ws_EXPA.cell(row = rowexpa, column = 10).value  = (a['expa'][ya]['inv'][yb]['itms'][yc]['iamt'])
+                    except:
+                         pass
+                    try:
+                         ws_EXPA.cell(row = rowexpa, column = 11).value  = (a['expa'][ya]['inv'][yb]['itms'][yc]['csamt'])
+                    except:
+                         pass
+                    ws_EXPA.cell(row = rowexpa, column = 12).value  = (a['expa'][ya]['inv'][yb]['oinum'])
+                    ws_EXPA.cell(row = rowexpa, column = 13).value  = (a['expa'][ya]['inv'][yb]['oidt'])
+                    r_count += 1
+                    rwoexpa += 1
+                    yc += 1
+               yb += 1
+          ya += 1
+except:
+     pass                         
+     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

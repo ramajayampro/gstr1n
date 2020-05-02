@@ -1,0 +1,46 @@
+
+#todo list .html
+
+<form method="POST" class="row">
+    {% csrf_token %}
+    <label class="col-lg-4"></label>   
+    <input type="text" class="form-control col-lg-6" name="task" placeholder="New Task?">
+    <button type="submit" class="btn btn-primary col-lg-2">Add Task</button>
+</form>
+
+forms.py 
+
+from django import forms
+from todolist_app.models import TaskList
+
+
+class TaskForm(forms.ModelForm):
+    class Meta:
+       model = TaskList
+       fields = ['task', 'done']
+    
+
+
+views.py
+
+rom django.http import HttpResponse
+rom todolist_app.models import TaskList
+rom todolist_app.forms import TaskForm
+rom django.contrib import messages
+
+
+# Create your views here.
+def todolist(request):
+          if request.method == "POST":
+               form = TaskForm(request.POST or None)
+               if form.is_valid():
+                    form.save()
+               messages.success(request,("New Task Added Successfully!"))     
+               return  redirect('todolist')
+          else:
+               all_tasks = TaskList.objects.all()
+               paginator = Paginator(all_tasks, 10)
+               page = request.GET.get('pg')
+               all_tasks = paginator.get_page(page)
+               
+               return render(request, 'todolist.html', {'all_tasks': all_tasks}) 

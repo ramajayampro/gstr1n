@@ -1,0 +1,23 @@
+<body>  
+<br>
+<div class="container">
+        {% if messages %}
+                {% for message in messages %}
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                {{ message }}
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                </button>
+                        </div>
+                {% endfor %}
+        {% endif %}
+
+<form method="POST" class="post-form" enctype="multipart/form-data">  
+        {% csrf_token %}  
+       
+        {{ form.as_p }}
+          
+        <button type="submit" class="save btn btn-default">Convert to Exce</button>  
+</form>
+</div>
+</body>  
